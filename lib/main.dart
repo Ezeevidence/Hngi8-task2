@@ -60,9 +60,15 @@ class _MyCustomFormState extends State<MyCustomForm> {
               
               Row(
                 children: [
-                  Image.asset('assets/hng.png'),
-                  Image.asset('assets/zuri.png'),
-                  Image.asset('14g')
+                  Expanded(
+                    child: Image.asset('assets/hng.png'),
+                  ),
+                  Expanded(
+                    child: Image.asset('assets/zuri.png'),
+                  ),
+                  Expanded(
+                    child: Image.asset('14g') ,
+                  )
                 ],
               ),
 
