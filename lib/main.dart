@@ -57,6 +57,23 @@ class _MyCustomFormState extends State<MyCustomForm> {
 
             Expanded
               (child: SizedBox(height: 20,)),
+
+
+            ElevatedButton(
+                onPressed: () {
+                  showDialog(
+                    context: context,
+                    builder: (context) {
+                      return AlertDialog(
+                        // Retrieve the text the that user has entered by using the
+                        // TextEditingController.
+                        content: Text(name.text),
+                      );
+                    },
+                  );
+                },
+                child: Text("Display")
+            ),
               
               Row(
                 children: [
@@ -67,27 +84,12 @@ class _MyCustomFormState extends State<MyCustomForm> {
                     child: Image.asset('assets/zuri.png'),
                   ),
                   Expanded(
-                    child: Image.asset('14g') ,
+                    child: Image.asset('14g.png') ,
                   )
                 ],
               ),
 
 
-              ElevatedButton(
-                  onPressed: () {
-                    showDialog(
-                      context: context,
-                      builder: (context) {
-                        return AlertDialog(
-                          // Retrieve the text the that user has entered by using the
-                          // TextEditingController.
-                          content: Text(name.text),
-                        );
-                      },
-                    );
-                  },
-                  child: Text("Display")
-              ),
           ],
         ),
       ),
