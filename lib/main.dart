@@ -57,6 +57,14 @@ class _MyCustomFormState extends State<MyCustomForm> {
 
             Expanded
               (child: SizedBox(height: 20,)),
+              
+              Row(
+                children: [
+                  Image.asset('assets/hng.png'),
+                  Image.asset('assets/zuri.png'),
+                  Image.asset('14g')
+                ],
+              ),
 
 
               ElevatedButton(
